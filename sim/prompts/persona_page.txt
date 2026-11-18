@@ -1,0 +1,6 @@
+$context
+<questions>
+$questions
+</questions>
+
+Answer these questions as the person in your persona card. Respond with only the JSON object.

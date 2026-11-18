@@ -1,0 +1,2273 @@
+{
+  "schema": 1,
+  "version": "1ed1a7c7aa",
+  "source": "docs/survey_items.md",
+  "conditions": [
+    "NEUTRAL",
+    "STRICT",
+    "GENERIC_ENCOURAGING",
+    "APPRAISAL_TAILORED"
+  ],
+  "message_labels": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "reverse_constant": 8,
+  "agree_labels": {
+    "1": "Strongly disagree",
+    "2": "Disagree",
+    "3": "Somewhat disagree",
+    "4": "Neither agree nor disagree",
+    "5": "Somewhat agree",
+    "6": "Agree",
+    "7": "Strongly agree"
+  },
+  "scale_names": [
+    "STAB",
+    "CTRL",
+    "BLAME",
+    "COPE",
+    "GLOB",
+    "SHAME",
+    "GUILT",
+    "MOT",
+    "SE",
+    "SC",
+    "QUIT",
+    "AI"
+  ],
+  "scales": {
+    "P": {
+      "MOT": [
+        "P_MOT1",
+        "P_MOT2",
+        "P_MOT3"
+      ],
+      "SE": [
+        "P_SE1",
+        "P_SE2",
+        "P_SE3"
+      ],
+      "SC": [
+        "P_SC1",
+        "P_SC2",
+        "P_SC3",
+        "P_SC4",
+        "P_SC5",
+        "P_SC6"
+      ],
+      "QUIT": [
+        "P_QUIT1",
+        "P_QUIT2",
+        "P_QUIT3"
+      ],
+      "AI": [
+        "P_AI1",
+        "P_AI2"
+      ]
+    },
+    "M": {
+      "STAB": [
+        "M_STAB1",
+        "M_STAB2"
+      ],
+      "CTRL": [
+        "M_CTRL1",
+        "M_CTRL2"
+      ],
+      "BLAME": [
+        "M_BLAME1",
+        "M_BLAME2"
+      ],
+      "COPE": [
+        "M_COPE1",
+        "M_COPE2"
+      ],
+      "GLOB": [
+        "M_GLOB1"
+      ],
+      "SHAME": [
+        "M_SHAME1",
+        "M_SHAME2",
+        "M_SHAME3"
+      ],
+      "GUILT": [
+        "M_GUILT1",
+        "M_GUILT2",
+        "M_GUILT3"
+      ],
+      "MOT": [
+        "M_MOT1",
+        "M_MOT2",
+        "M_MOT3"
+      ]
+    },
+    "F": {
+      "STAB": [
+        "F_STAB1",
+        "F_STAB2"
+      ],
+      "CTRL": [
+        "F_CTRL1",
+        "F_CTRL2"
+      ],
+      "BLAME": [
+        "F_BLAME1",
+        "F_BLAME2"
+      ],
+      "COPE": [
+        "F_COPE1",
+        "F_COPE2"
+      ],
+      "GLOB": [
+        "F_GLOB1"
+      ],
+      "SHAME": [
+        "F_SHAME1",
+        "F_SHAME2"
+      ],
+      "GUILT": [
+        "F_GUILT1"
+      ],
+      "MOT": [
+        "F_MOT1",
+        "F_MOT2",
+        "F_MOT3"
+      ]
+    }
+  },
+  "change_pairs": [
+    {
+      "f": "F_STAB1",
+      "m": "M_STAB1",
+      "scale": "STAB"
+    },
+    {
+      "f": "F_STAB2",
+      "m": "M_STAB2",
+      "scale": "STAB"
+    },
+    {
+      "f": "F_CTRL1",
+      "m": "M_CTRL1",
+      "scale": "CTRL"
+    },
+    {
+      "f": "F_CTRL2",
+      "m": "M_CTRL2",
+      "scale": "CTRL"
+    },
+    {
+      "f": "F_BLAME1",
+      "m": "M_BLAME1",
+      "scale": "BLAME"
+    },
+    {
+      "f": "F_BLAME2",
+      "m": "M_BLAME2",
+      "scale": "BLAME"
+    },
+    {
+      "f": "F_COPE1",
+      "m": "M_COPE1",
+      "scale": "COPE"
+    },
+    {
+      "f": "F_COPE2",
+      "m": "M_COPE2",
+      "scale": "COPE"
+    },
+    {
+      "f": "F_GLOB1",
+      "m": "M_GLOB1",
+      "scale": "GLOB"
+    },
+    {
+      "f": "F_SHAME1",
+      "m": "M_SHAME1",
+      "scale": "SHAME"
+    },
+    {
+      "f": "F_SHAME2",
+      "m": "M_SHAME2",
+      "scale": "SHAME"
+    },
+    {
+      "f": "F_GUILT1",
+      "m": "M_GUILT1",
+      "scale": "GUILT"
+    },
+    {
+      "f": "F_MOT1",
+      "m": "M_MOT1",
+      "scale": "MOT"
+    },
+    {
+      "f": "F_MOT2",
+      "m": "M_MOT2",
+      "scale": "MOT"
+    },
+    {
+      "f": "F_MOT3",
+      "m": "M_MOT3",
+      "scale": "MOT"
+    },
+    {
+      "f": "F_INTENT",
+      "m": "M_INTENT",
+      "scale": null
+    }
+  ],
+  "attention": {
+    "M_ATTN": {
+      "type": "correct_value",
+      "correct": 3
+    },
+    "Z_ATTN2": {
+      "type": "match_item",
+      "match": "P_GOALTYPE"
+    }
+  },
+  "speeder_seconds": 300,
+  "pages": [
+    {
+      "id": "P_consent",
+      "section": "P",
+      "title": "Consent",
+      "kind": "consent",
+      "items": [
+        {
+          "code": "P0",
+          "section": "P",
+          "type": "single",
+          "required": true,
+          "reverse": false,
+          "text": "I am 18 or older, have read the information above, and agree to take part.",
+          "options": [
+            {
+              "value": "Yes",
+              "label": "Yes",
+              "text_entry": false
+            },
+            {
+              "value": "No",
+              "label": "No",
+              "text_entry": false
+            }
+          ],
+          "end_if": [
+            "No"
+          ],
+          "end_reason": "declined"
+        }
+      ]
+    },
+    {
+      "id": "P_screening",
+      "section": "P",
+      "title": "Screening",
+      "kind": "items",
+      "items": [
+        {
+          "code": "P_SCR1",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "options": [
+            {
+              "value": "Yes",
+              "label": "Yes",
+              "text_entry": false
+            },
+            {
+              "value": "No",
+              "label": "No",
+              "text_entry": false
+            }
+          ],
+          "end_if": [
+            "No"
+          ],
+          "type": "single",
+          "text": "Are you 18 or older?"
+        },
+        {
+          "code": "P_SCR2",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "options": [
+            {
+              "value": "Yes",
+              "label": "Yes",
+              "text_entry": false
+            },
+            {
+              "value": "No",
+              "label": "No",
+              "text_entry": false
+            }
+          ],
+          "end_if": [
+            "No"
+          ],
+          "type": "single",
+          "text": "Are you currently trying to make or keep a healthy lifestyle change (for example exercise, eating, sleep, stress, screen time)?"
+        },
+        {
+          "code": "P_SCR3",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "options": [
+            {
+              "value": "Yes",
+              "label": "Yes",
+              "text_entry": false
+            },
+            {
+              "value": "No",
+              "label": "No",
+              "text_entry": false
+            },
+            {
+              "value": "Prefer not to say",
+              "label": "Prefer not to say",
+              "text_entry": false
+            }
+          ],
+          "end_if": [
+            "Yes"
+          ],
+          "support_if": [
+            "Yes"
+          ],
+          "type": "single",
+          "text": "Are you currently receiving treatment for an eating disorder?"
+        }
+      ],
+      "screening": true
+    },
+    {
+      "id": "P_background",
+      "section": "P",
+      "title": "Background",
+      "kind": "items",
+      "items": [
+        {
+          "code": "P_AGE",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "options": [
+            {
+              "value": "18–24",
+              "label": "18–24",
+              "text_entry": false
+            },
+            {
+              "value": "25–34",
+              "label": "25–34",
+              "text_entry": false
+            },
+            {
+              "value": "35–44",
+              "label": "35–44",
+              "text_entry": false
+            },
+            {
+              "value": "45–54",
+              "label": "45–54",
+              "text_entry": false
+            },
+            {
+              "value": "55–64",
+              "label": "55–64",
+              "text_entry": false
+            },
+            {
+              "value": "65+",
+              "label": "65+",
+              "text_entry": false
+            }
+          ],
+          "type": "single",
+          "text": "Age range:"
+        },
+        {
+          "code": "P_GENDER",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "options": [
+            {
+              "value": "Woman",
+              "label": "Woman",
+              "text_entry": false
+            },
+            {
+              "value": "Man",
+              "label": "Man",
+              "text_entry": false
+            },
+            {
+              "value": "Non-binary",
+              "label": "Non-binary",
+              "text_entry": false
+            },
+            {
+              "value": "Self-describe",
+              "label": "Self-describe",
+              "text_entry": true
+            },
+            {
+              "value": "Prefer not to say",
+              "label": "Prefer not to say",
+              "text_entry": false
+            }
+          ],
+          "type": "single",
+          "text": "Gender:"
+        },
+        {
+          "code": "P_COUNTRY",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "type": "short_text",
+          "text": "Country you live in:"
+        },
+        {
+          "code": "P_STUDENT",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "options": [
+            {
+              "value": "Yes",
+              "label": "Yes",
+              "text_entry": false
+            },
+            {
+              "value": "No",
+              "label": "No",
+              "text_entry": false
+            }
+          ],
+          "type": "single",
+          "text": "Are you currently a student?"
+        }
+      ]
+    },
+    {
+      "id": "P_your_lifestyle_goal",
+      "section": "P",
+      "title": "Your lifestyle goal",
+      "kind": "items",
+      "items": [
+        {
+          "code": "P_GOALTYPE",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "options": [
+            {
+              "value": "Exercise",
+              "label": "Exercise",
+              "text_entry": false
+            },
+            {
+              "value": "Eating habits",
+              "label": "Eating habits",
+              "text_entry": false
+            },
+            {
+              "value": "Sleep",
+              "label": "Sleep",
+              "text_entry": false
+            },
+            {
+              "value": "Stress",
+              "label": "Stress",
+              "text_entry": false
+            },
+            {
+              "value": "Screen time",
+              "label": "Screen time",
+              "text_entry": false
+            },
+            {
+              "value": "Other",
+              "label": "Other",
+              "text_entry": true
+            }
+          ],
+          "type": "single",
+          "text": "Which area is your main goal in?"
+        },
+        {
+          "code": "P_GOALTEXT",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "type": "text",
+          "text": "In one or two sentences, what is your goal?"
+        },
+        {
+          "code": "P_GOALLEN",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "options": [
+            {
+              "value": "Less than 2 weeks",
+              "label": "Less than 2 weeks",
+              "text_entry": false
+            },
+            {
+              "value": "2–4 weeks",
+              "label": "2–4 weeks",
+              "text_entry": false
+            },
+            {
+              "value": "1–3 months",
+              "label": "1–3 months",
+              "text_entry": false
+            },
+            {
+              "value": "3–12 months",
+              "label": "3–12 months",
+              "text_entry": false
+            },
+            {
+              "value": "Over a year",
+              "label": "Over a year",
+              "text_entry": false
+            }
+          ],
+          "type": "single",
+          "text": "How long have you been working on it?"
+        },
+        {
+          "code": "P_GOALIMP",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Not at all",
+            "7": "Extremely"
+          },
+          "scale_kind": "amount",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "How important is this goal to you?"
+        },
+        {
+          "code": "P_APP",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "options": [
+            {
+              "value": "Yes",
+              "label": "Yes",
+              "text_entry": false
+            },
+            {
+              "value": "No",
+              "label": "No",
+              "text_entry": false
+            },
+            {
+              "value": "I used to",
+              "label": "I used to",
+              "text_entry": false
+            }
+          ],
+          "type": "single",
+          "text": "Do you currently use an app or tracker for this goal?"
+        }
+      ]
+    },
+    {
+      "id": "P_baseline_motivation",
+      "section": "P",
+      "title": "Baseline motivation",
+      "kind": "items",
+      "items": [
+        {
+          "code": "P_MOT1",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I am motivated to keep working on my goal.",
+          "scale": "MOT"
+        },
+        {
+          "code": "P_MOT2",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I intend to keep working on my goal over the next month.",
+          "scale": "MOT"
+        },
+        {
+          "code": "P_MOT3",
+          "section": "P",
+          "required": true,
+          "reverse": true,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I sometimes feel like giving up on this goal.",
+          "scale": "MOT"
+        }
+      ]
+    },
+    {
+      "id": "P_self_efficacy",
+      "section": "P",
+      "title": "Self-efficacy",
+      "kind": "items",
+      "items": [
+        {
+          "code": "P_SE1",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I am confident I can stick with my goal even when it gets hard.",
+          "scale": "SE"
+        },
+        {
+          "code": "P_SE2",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I am confident I can get back on track after a bad day.",
+          "scale": "SE"
+        },
+        {
+          "code": "P_SE3",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I am confident I can reach my goal.",
+          "scale": "SE"
+        }
+      ]
+    },
+    {
+      "id": "P_how_you_treat_yourself_after_setbacks",
+      "section": "P",
+      "title": "How you treat yourself after setbacks",
+      "kind": "items",
+      "items": [
+        {
+          "code": "P_SC1",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "When I fall short of a goal, I try to be kind to myself.",
+          "scale": "SC"
+        },
+        {
+          "code": "P_SC2",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "When I slip up, I remind myself that everyone has setbacks.",
+          "scale": "SC"
+        },
+        {
+          "code": "P_SC3",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "When I fail at something important, I try to keep things in perspective.",
+          "scale": "SC"
+        },
+        {
+          "code": "P_SC4",
+          "section": "P",
+          "required": true,
+          "reverse": true,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "When I slip up, I am hard on myself.",
+          "scale": "SC"
+        },
+        {
+          "code": "P_SC5",
+          "section": "P",
+          "required": true,
+          "reverse": true,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "When I fall short, I feel like I am the only one who struggles this much.",
+          "scale": "SC"
+        },
+        {
+          "code": "P_SC6",
+          "section": "P",
+          "required": true,
+          "reverse": true,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "After a setback, I keep thinking about everything I did wrong.",
+          "scale": "SC"
+        }
+      ]
+    },
+    {
+      "id": "P_tendency_to_quit_after_a_slip",
+      "section": "P",
+      "title": "Tendency to quit after a slip",
+      "kind": "items",
+      "items": [
+        {
+          "code": "P_QUIT1",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "After one slip, I often think \"I've ruined it anyway\" and stop trying for a while.",
+          "scale": "QUIT"
+        },
+        {
+          "code": "P_QUIT2",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "In the past, a single bad day has made me give up on a health goal.",
+          "scale": "QUIT"
+        },
+        {
+          "code": "P_QUIT3",
+          "section": "P",
+          "required": true,
+          "reverse": true,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "One setback usually doesn't change my plans.",
+          "scale": "QUIT"
+        }
+      ]
+    },
+    {
+      "id": "P_attitudes_toward_ai_feedback",
+      "section": "P",
+      "title": "Attitudes toward AI feedback",
+      "kind": "items",
+      "items": [
+        {
+          "code": "P_AI1",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I would be comfortable getting feedback on my habits from an AI coach.",
+          "scale": "AI"
+        },
+        {
+          "code": "P_AI2",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I trust AI tools to give helpful advice about health habits.",
+          "scale": "AI"
+        },
+        {
+          "code": "P_AIUSE",
+          "section": "P",
+          "required": true,
+          "reverse": false,
+          "options": [
+            {
+              "value": "Never",
+              "label": "Never",
+              "text_entry": false
+            },
+            {
+              "value": "Rarely",
+              "label": "Rarely",
+              "text_entry": false
+            },
+            {
+              "value": "Monthly",
+              "label": "Monthly",
+              "text_entry": false
+            },
+            {
+              "value": "Weekly",
+              "label": "Weekly",
+              "text_entry": false
+            },
+            {
+              "value": "Daily",
+              "label": "Daily",
+              "text_entry": false
+            }
+          ],
+          "type": "single",
+          "text": "How often do you use AI chatbots (e.g. ChatGPT, Claude)?"
+        }
+      ]
+    },
+    {
+      "id": "M_setback_recall",
+      "section": "M",
+      "title": "Setback recall",
+      "kind": "items",
+      "items": [
+        {
+          "code": "M_TEXT",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "min_chars": 150,
+          "type": "text",
+          "text": "Think of a recent time you slipped on your goal (for example, skipped a workout, stress-ate, stayed up too late, missed logging). Describe what happened, how you felt, and what went through your mind afterward. Please write at least 3 sentences."
+        },
+        {
+          "code": "M_WHEN",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "options": [
+            {
+              "value": "Today",
+              "label": "Today",
+              "text_entry": false
+            },
+            {
+              "value": "Past few days",
+              "label": "Past few days",
+              "text_entry": false
+            },
+            {
+              "value": "Past week",
+              "label": "Past week",
+              "text_entry": false
+            },
+            {
+              "value": "Past month",
+              "label": "Past month",
+              "text_entry": false
+            },
+            {
+              "value": "Longer ago",
+              "label": "Longer ago",
+              "text_entry": false
+            }
+          ],
+          "type": "single",
+          "text": "When did this happen?"
+        },
+        {
+          "code": "M_EMO",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "options": [
+            {
+              "value": "Frustrated",
+              "label": "Frustrated",
+              "text_entry": false
+            },
+            {
+              "value": "Disappointed",
+              "label": "Disappointed",
+              "text_entry": false
+            },
+            {
+              "value": "Guilty",
+              "label": "Guilty",
+              "text_entry": false
+            },
+            {
+              "value": "Ashamed",
+              "label": "Ashamed",
+              "text_entry": false
+            },
+            {
+              "value": "Sad",
+              "label": "Sad",
+              "text_entry": false
+            },
+            {
+              "value": "Anxious",
+              "label": "Anxious",
+              "text_entry": false
+            },
+            {
+              "value": "Angry at myself",
+              "label": "Angry at myself",
+              "text_entry": false
+            },
+            {
+              "value": "Indifferent",
+              "label": "Indifferent",
+              "text_entry": false
+            },
+            {
+              "value": "Relieved",
+              "label": "Relieved",
+              "text_entry": false
+            },
+            {
+              "value": "Other",
+              "label": "Other",
+              "text_entry": true
+            }
+          ],
+          "type": "multi",
+          "text": "Which feelings did you have afterward?",
+          "help": "Select all that apply."
+        },
+        {
+          "code": "M_EMOINT",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Very weak",
+            "7": "Very strong"
+          },
+          "scale_kind": "custom",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "How strong were those feelings?"
+        }
+      ]
+    },
+    {
+      "id": "M_appraisal_of_the_setback",
+      "section": "M",
+      "title": "Appraisal of the setback",
+      "kind": "items",
+      "items": [
+        {
+          "code": "M_STAB1",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "This kind of setback will keep happening to me.",
+          "scale": "STAB",
+          "construct": "Stability"
+        },
+        {
+          "code": "M_STAB2",
+          "section": "M",
+          "required": true,
+          "reverse": true,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "This setback was a one-time thing.",
+          "scale": "STAB",
+          "construct": "Stability"
+        },
+        {
+          "code": "M_CTRL1",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I can control whether this happens again.",
+          "scale": "CTRL",
+          "construct": "Controllability"
+        },
+        {
+          "code": "M_CTRL2",
+          "section": "M",
+          "required": true,
+          "reverse": true,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "Whether I slip again is mostly out of my hands.",
+          "scale": "CTRL",
+          "construct": "Controllability"
+        },
+        {
+          "code": "M_ATTN",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "attention": {
+            "type": "correct_value",
+            "correct": 3
+          },
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "To show you are reading carefully, please select \"Somewhat disagree\" for this item."
+        },
+        {
+          "code": "M_BLAME1",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "This setback happened because of who I am as a person.",
+          "scale": "BLAME",
+          "construct": "Self-blame / locus"
+        },
+        {
+          "code": "M_BLAME2",
+          "section": "M",
+          "required": true,
+          "reverse": true,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "This setback was mostly caused by my situation that day, not by me.",
+          "scale": "BLAME",
+          "construct": "Self-blame / locus"
+        },
+        {
+          "code": "M_COPE1",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I know what I can do to get back on track.",
+          "scale": "COPE",
+          "construct": "Coping potential"
+        },
+        {
+          "code": "M_COPE2",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I have what it takes to recover from this setback.",
+          "scale": "COPE",
+          "construct": "Coping potential"
+        },
+        {
+          "code": "M_GLOB1",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "This setback means I am failing at my goal overall.",
+          "scale": "GLOB",
+          "construct": "Globality"
+        }
+      ]
+    },
+    {
+      "id": "M_shame_and_guilt_right_now",
+      "section": "M",
+      "title": "Shame and guilt right now",
+      "kind": "items",
+      "items": [
+        {
+          "code": "M_SHAME1",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Not at all",
+            "7": "Very much"
+          },
+          "scale_kind": "amount",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I feel like I am a bad or weak person.",
+          "scale": "SHAME"
+        },
+        {
+          "code": "M_SHAME2",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Not at all",
+            "7": "Very much"
+          },
+          "scale_kind": "amount",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I want to hide or avoid thinking about my goal.",
+          "scale": "SHAME"
+        },
+        {
+          "code": "M_SHAME3",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Not at all",
+            "7": "Very much"
+          },
+          "scale_kind": "amount",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I feel small or worthless.",
+          "scale": "SHAME"
+        },
+        {
+          "code": "M_GUILT1",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Not at all",
+            "7": "Very much"
+          },
+          "scale_kind": "amount",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I regret what I did and wish I had acted differently.",
+          "scale": "GUILT"
+        },
+        {
+          "code": "M_GUILT2",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Not at all",
+            "7": "Very much"
+          },
+          "scale_kind": "amount",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I want to make up for this slip.",
+          "scale": "GUILT"
+        },
+        {
+          "code": "M_GUILT3",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Not at all",
+            "7": "Very much"
+          },
+          "scale_kind": "amount",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I feel bad about what I did, not about who I am.",
+          "scale": "GUILT"
+        }
+      ]
+    },
+    {
+      "id": "M_motivation_right_now_before_feedback",
+      "section": "M",
+      "title": "Motivation right now, before feedback",
+      "kind": "items",
+      "items": [
+        {
+          "code": "M_MOT1",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "Right now, I feel motivated to keep working on my goal.",
+          "scale": "MOT"
+        },
+        {
+          "code": "M_MOT2",
+          "section": "M",
+          "required": true,
+          "reverse": true,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "Right now, I feel like giving up on this goal.",
+          "scale": "MOT"
+        },
+        {
+          "code": "M_MOT3",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I plan to do my next planned healthy action as usual.",
+          "scale": "MOT"
+        },
+        {
+          "code": "M_INTENT",
+          "section": "M",
+          "required": true,
+          "reverse": false,
+          "min": 0,
+          "max": 100,
+          "unit": "%",
+          "type": "slider",
+          "text": "How likely are you to do your next planned healthy action in the next 48 hours?"
+        }
+      ]
+    },
+    {
+      "id": "F_feedback",
+      "section": "F",
+      "title": "Feedback",
+      "kind": "feedback",
+      "items": [
+        {
+          "code": "F_STAB1",
+          "section": "F",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "After reading this message, I think this kind of setback will keep happening to me.",
+          "scale": "STAB",
+          "construct": "Appraisal after this message"
+        },
+        {
+          "code": "F_STAB2",
+          "section": "F",
+          "required": true,
+          "reverse": true,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "After reading this message, I see this setback as a one-time thing.",
+          "scale": "STAB",
+          "construct": "Appraisal after this message"
+        },
+        {
+          "code": "F_CTRL1",
+          "section": "F",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "After reading this message, I feel I can control whether this happens again.",
+          "scale": "CTRL",
+          "construct": "Appraisal after this message"
+        },
+        {
+          "code": "F_CTRL2",
+          "section": "F",
+          "required": true,
+          "reverse": true,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "After reading this message, whether I slip again feels mostly out of my hands.",
+          "scale": "CTRL",
+          "construct": "Appraisal after this message"
+        },
+        {
+          "code": "F_BLAME1",
+          "section": "F",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "After reading this message, I feel this setback happened because of who I am.",
+          "scale": "BLAME",
+          "construct": "Appraisal after this message"
+        },
+        {
+          "code": "F_BLAME2",
+          "section": "F",
+          "required": true,
+          "reverse": true,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "After reading this message, I see this setback as mostly caused by my situation that day.",
+          "scale": "BLAME",
+          "construct": "Appraisal after this message"
+        },
+        {
+          "code": "F_COPE1",
+          "section": "F",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "After reading this message, I know what I can do to get back on track.",
+          "scale": "COPE",
+          "construct": "Appraisal after this message"
+        },
+        {
+          "code": "F_COPE2",
+          "section": "F",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "After reading this message, I feel I have what it takes to recover.",
+          "scale": "COPE",
+          "construct": "Appraisal after this message"
+        },
+        {
+          "code": "F_GLOB1",
+          "section": "F",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "After reading this message, this setback feels like I am failing at my goal overall.",
+          "scale": "GLOB",
+          "construct": "Appraisal after this message"
+        },
+        {
+          "code": "F_SHAME1",
+          "section": "F",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Not at all",
+            "7": "Very much"
+          },
+          "scale_kind": "amount",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I feel like I am a bad or weak person.",
+          "scale": "SHAME",
+          "construct": "Feelings after this message"
+        },
+        {
+          "code": "F_SHAME2",
+          "section": "F",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Not at all",
+            "7": "Very much"
+          },
+          "scale_kind": "amount",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I want to hide or avoid thinking about my goal.",
+          "scale": "SHAME",
+          "construct": "Feelings after this message"
+        },
+        {
+          "code": "F_GUILT1",
+          "section": "F",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Not at all",
+            "7": "Very much"
+          },
+          "scale_kind": "amount",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I regret what I did and want to make up for it.",
+          "scale": "GUILT",
+          "construct": "Feelings after this message"
+        },
+        {
+          "code": "F_MOT1",
+          "section": "F",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "This message makes me motivated to keep working on my goal.",
+          "scale": "MOT",
+          "construct": "Motivation after this message"
+        },
+        {
+          "code": "F_MOT2",
+          "section": "F",
+          "required": true,
+          "reverse": true,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "This message makes me feel like giving up.",
+          "scale": "MOT",
+          "construct": "Motivation after this message"
+        },
+        {
+          "code": "F_MOT3",
+          "section": "F",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "After this message, I plan to do my next planned healthy action as usual.",
+          "scale": "MOT",
+          "construct": "Motivation after this message"
+        },
+        {
+          "code": "F_INTENT",
+          "section": "F",
+          "required": true,
+          "reverse": false,
+          "min": 0,
+          "max": 100,
+          "unit": "%",
+          "type": "slider",
+          "text": "After this message, how likely are you to do your next planned healthy action in the next 48 hours?",
+          "construct": "Motivation after this message"
+        },
+        {
+          "code": "F_TAIL1",
+          "section": "F",
+          "required": true,
+          "reverse": false,
+          "manipulation_check": true,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "This message responded to how I actually see my setback.",
+          "construct": "How the message came across"
+        },
+        {
+          "code": "F_TAIL2",
+          "section": "F",
+          "required": true,
+          "reverse": true,
+          "manipulation_check": true,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "This message could have been sent to anyone.",
+          "construct": "How the message came across"
+        },
+        {
+          "code": "F_EMP1",
+          "section": "F",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "This message felt understanding.",
+          "construct": "How the message came across"
+        },
+        {
+          "code": "F_WARM1",
+          "section": "F",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "This message felt warm and supportive.",
+          "construct": "How the message came across"
+        },
+        {
+          "code": "F_JUDG1",
+          "section": "F",
+          "required": true,
+          "reverse": true,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "This message felt judgmental.",
+          "construct": "How the message came across"
+        },
+        {
+          "code": "F_HOLL1",
+          "section": "F",
+          "required": true,
+          "reverse": true,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "This message felt hollow or too soft to take seriously.",
+          "construct": "How the message came across"
+        },
+        {
+          "code": "F_HELP1",
+          "section": "F",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "This message was helpful.",
+          "construct": "How the message came across"
+        },
+        {
+          "code": "F_CRED1",
+          "section": "F",
+          "required": true,
+          "reverse": false,
+          "anchors": {
+            "1": "Strongly disagree",
+            "2": "Disagree",
+            "3": "Somewhat disagree",
+            "4": "Neither agree nor disagree",
+            "5": "Somewhat agree",
+            "6": "Agree",
+            "7": "Strongly agree"
+          },
+          "scale_kind": "agree",
+          "min": 1,
+          "max": 7,
+          "type": "likert",
+          "text": "I would trust advice from a coach that writes like this.",
+          "construct": "How the message came across"
+        },
+        {
+          "code": "F_OPEN",
+          "section": "F",
+          "required": false,
+          "reverse": false,
+          "type": "text",
+          "text": "What, if anything, about this message helped or bothered you?",
+          "construct": "Open response"
+        }
+      ]
+    },
+    {
+      "id": "Z_comparing_the_four_messages",
+      "section": "Z",
+      "title": "Comparing the four messages",
+      "kind": "compare",
+      "items": [
+        {
+          "code": "Z_RANK",
+          "section": "Z",
+          "required": true,
+          "reverse": false,
+          "rank_of": "messages",
+          "min": 1,
+          "max": 4,
+          "type": "rank",
+          "text": "Drag to rank the messages from most to least likely to keep you going on your goal."
+        },
+        {
+          "code": "Z_BEST",
+          "section": "Z",
+          "required": true,
+          "reverse": false,
+          "options": [
+            {
+              "value": "A",
+              "label": "A",
+              "text_entry": false
+            },
+            {
+              "value": "B",
+              "label": "B",
+              "text_entry": false
+            },
+            {
+              "value": "C",
+              "label": "C",
+              "text_entry": false
+            },
+            {
+              "value": "D",
+              "label": "D",
+              "text_entry": false
+            }
+          ],
+          "message_choice": true,
+          "type": "single",
+          "text": "If you could get only one of these after every setback, which would you pick?"
+        },
+        {
+          "code": "Z_WORST",
+          "section": "Z",
+          "required": true,
+          "reverse": false,
+          "options": [
+            {
+              "value": "A",
+              "label": "A",
+              "text_entry": false
+            },
+            {
+              "value": "B",
+              "label": "B",
+              "text_entry": false
+            },
+            {
+              "value": "C",
+              "label": "C",
+              "text_entry": false
+            },
+            {
+              "value": "D",
+              "label": "D",
+              "text_entry": false
+            },
+            {
+              "value": "None",
+              "label": "None",
+              "text_entry": false
+            }
+          ],
+          "message_choice": true,
+          "type": "single",
+          "text": "Which message would most make you want to give up?"
+        },
+        {
+          "code": "Z_WHY",
+          "section": "Z",
+          "required": true,
+          "reverse": false,
+          "type": "text",
+          "text": "Briefly, why did you pick your top message?"
+        }
+      ]
+    },
+    {
+      "id": "Z_attention_and_quality_checks",
+      "section": "Z",
+      "title": "Attention and quality checks",
+      "kind": "items",
+      "items": [
+        {
+          "code": "Z_ATTN2",
+          "section": "Z",
+          "required": true,
+          "reverse": false,
+          "attention": {
+            "type": "match_item",
+            "match": "P_GOALTYPE"
+          },
+          "options": [
+            {
+              "value": "Exercise",
+              "label": "Exercise",
+              "text_entry": false
+            },
+            {
+              "value": "Eating habits",
+              "label": "Eating habits",
+              "text_entry": false
+            },
+            {
+              "value": "Sleep",
+              "label": "Sleep",
+              "text_entry": false
+            },
+            {
+              "value": "Stress",
+              "label": "Stress",
+              "text_entry": false
+            },
+            {
+              "value": "Screen time",
+              "label": "Screen time",
+              "text_entry": false
+            },
+            {
+              "value": "Other",
+              "label": "Other",
+              "text_entry": false
+            }
+          ],
+          "type": "single",
+          "text": "What was the setback you wrote about mainly related to?"
+        },
+        {
+          "code": "Z_HONEST",
+          "section": "Z",
+          "required": true,
+          "reverse": false,
+          "options": [
+            {
+              "value": "Yes",
+              "label": "Yes",
+              "text_entry": false
+            },
+            {
+              "value": "No",
+              "label": "No",
+              "text_entry": false
+            }
+          ],
+          "type": "single",
+          "text": "Did you answer honestly and pay attention throughout?",
+          "help": "your payment is not affected"
+        }
+      ]
+    }
+  ],
+  "texts": {
+    "study_title": "Changing How Setbacks Feel",
+    "consent_body": "This survey is part of a graduate class project for an Affective Computing course at Northeastern University. It is not published research. You will describe a recent setback with a lifestyle goal, read four short messages written by AI, and answer questions about them. It takes about 15–20 minutes. Participation is voluntary, and you can stop at any time by closing the page. We do not collect your name or email. Your responses will be used only for this class project and deleted when the course ends. Some questions ask about difficult feelings after a setback; you can skip any optional question you are not comfortable answering. The setback description is needed to write your messages. Questions: [team contact email].",
+    "declined": "You chose not to take part. Thank you for your time. You can close this window.",
+    "screened_out": "Thank you for your interest. Based on your answers, this study is not a good fit for you right now. We appreciate your time. You can close this window.",
+    "support_resources_title": "Support resources",
+    "support_resources": "Thank you for your time. If you are struggling with eating, exercise, or how you feel about yourself, please reach out to someone you trust or a health professional. In the US, you can call or text 988 (Suicide & Crisis Lifeline) or text HOME to 741741 (Crisis Text Line), any time. Outside the US, please contact your local health or crisis services.",
+    "support_end": "You can close this window.",
+    "generating": "Preparing your messages. This usually takes 10-30 seconds. Please don't close this window.",
+    "generation_error": "Sorry, something went wrong while preparing your messages. Please try again in a moment. If this keeps happening, contact the project team.",
+    "f_instruction": "Imagine your AI coach sent you this message right after the setback you described. Read it, then answer the questions.",
+    "compare_instruction": "Here are the four messages you read about your setback.",
+    "debrief": "Thank you. In this study the four messages were written by AI in four styles: neutral, strict, generally encouraging, and encouraging in a way tailored to how you described your setback. We are studying which style best helps people keep going after a slip. Setbacks are a normal part of any lifestyle change. If this study brought up difficult feelings about eating, exercise or yourself, please reach out to someone you trust or a health professional. This was a class project, and your responses will be deleted when the course ends. Questions: [team contact email].",
+    "scale_instructions": {
+      "agree": "How much do you agree or disagree with each statement?",
+      "amount": "How much does each statement describe how you feel right now?"
+    },
+    "page_titles": {},
+    "page_instructions": {}
+  }
+}

@@ -1,0 +1,27 @@
+=== SYSTEM ===
+You create realistic, varied fictional people for a simulation of an online survey about lifestyle goals and setbacks. Each person should feel specific and believable, with an ordinary life. Avoid stereotypes and avoid making everyone articulate, upbeat or self-aware. Do not make the person a health professional, coach or researcher.
+
+Respond with only a JSON object, no other text.
+=== USER ===
+Create one person with these fixed attributes:
+- Age range: $age_range
+- Main lifestyle goal area: $goal_type
+- How long they have been working on the goal: $goal_duration
+- Self-compassion after setbacks: $self_compassion
+- Tendency to quit after a slip: $quit_tendency
+- Writing style: $writing_style
+- How they tend to interpret their setbacks: $profile_description
+
+Return a JSON object with exactly these keys:
+{
+  "name": "first name only",
+  "gender": "woman | man | non-binary",
+  "country": "country they live in",
+  "is_student": true or false,
+  "occupation_and_life": "one or two sentences about their daily life, work and responsibilities",
+  "goal_text": "their goal in one or two sentences, in their own words",
+  "uses_app_or_tracker": "Yes | No | I used to",
+  "ai_chatbot_use": "Never | Rarely | Monthly | Weekly | Daily",
+  "attitude_to_ai": "one sentence on how they feel about AI tools giving health advice",
+  "inner_voice": "two or three sentences, in their own voice, showing what typically goes through their head after a slip"
+}
